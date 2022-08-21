@@ -1,0 +1,68 @@
+/* wide screen and larger monitors */
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('fate.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   background-color: rgba(0, 0, 0, 0.892);
+}
+/*average monitor */
+@media only screen and (max-width: 1080px) 
+{ body { 
+    /* background size smaller for smaller monitors */ 
+    background-image: url(1080fate.jpg); 
+} }
+/*mobile images */
+@media only screen and (max-width: 768px) 
+{ body { 
+    /* The file size of this background image is 93% smaller to improve page load speed on mobile internet connections */ 
+    background-image: url(Jfate.jpg); 
+} }
+/* this container is the background in the center and is how it is centered */
+.content {
+    /* makes everything but the bottom right rounded corners */
+    border-radius: 10px 10px 0px 10px;
+    position: absolute;
+    mix-blend-mode: multiply;
+    /* *translucent background behind the text in center of page */
+    background-color: rgba(0, 0, 0, 0.959);
+    /* * pink outline around the scroll system*/
+    box-shadow: 2px 4px 3px rgba(207, 53, 53, 0.678);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    width: 40%;
+}
+
+.container {
+    margin: 200px;
+    margin-top: 0;
+    mix-blend-mode:luminosity;
+    color: rgb(0, 0, 0);
+    background-color: rgba(236, 236, 236, 0.558);
+    position: relative;
+    top: 60vh;
+    text-align: center;
+    border-radius: 10px 10px 0px 10px;
+}
+button {
+    border: 0;
+    color: rgba(255, 92, 77, 0.941);
+    background-color: rgba(0, 0, 0, 0.56);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.951);
+    /* * centers content to be always in the middle and slightly bellow 50% */
+}
+
